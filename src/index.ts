@@ -2,10 +2,6 @@ import babelCore, { PluginObj } from '@babel/core'
 
 type Babel = typeof babelCore
 
-export interface IOnExtendEvent {
-	onExtend(targetClass: this): void
-}
-
 const BabelPluginEventOnChassExtend = (babel: Babel): PluginObj => {
 	return {
 		visitor: {
