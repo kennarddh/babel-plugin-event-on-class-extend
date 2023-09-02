@@ -5,10 +5,30 @@ type Babel = typeof babelCore
 const BabelPluginEventOnChassExtend = (babel: Babel): PluginObj => {
 	return {
 		visitor: {
-			Identifier(path) {
-				// in this example change all the variable `n` to `x`
-				if (path.isIdentifier({ name: 'n' })) {
-					path.node.name = 'x'
+			ClassDeclaration(path) {
+				if (path.isClassDeclaration()) {
+					if (
+						path.node.superClass !== null &&
+						path.node.superClass.type === 'Identifier'
+					) {
+						const className = path.node.id.name
+						const superClass = path.node.superClass.name
+
+						path.insertAfter(
+							babel.types.expressionStatement(
+								babel.types.optionalCallExpression(
+									babel.types.optionalMemberExpression(
+										babel.types.identifier(superClass),
+										babel.types.identifier('onExtend'),
+										false,
+										true
+									),
+									[babel.types.identifier(className)],
+									false
+								)
+							)
+						)
+					}
 				}
 			},
 		},

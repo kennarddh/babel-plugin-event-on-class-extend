@@ -15,5 +15,5 @@ class Y extends X {
 	}
 }
 
-// X.onExtend(Y) will be called here
+// X?.onExtend(Y) will be called here
 ```
