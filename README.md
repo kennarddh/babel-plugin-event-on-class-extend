@@ -3,7 +3,7 @@
 ## Usage
 
 ```ts
-class X implements IOnExtendEvent {
+class X {
 	static onExtend(targetClass: X) {
 		console.log(`Class X is extended by ${targetClass.toString()}`)
 	}

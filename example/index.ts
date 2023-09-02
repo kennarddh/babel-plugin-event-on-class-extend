@@ -2,7 +2,7 @@ import babel from '@babel/core'
 import babelPluginEventOnClassExtend from '../dist/index.js'
 
 const code = `
-class X implements IOnExtendEvent {
+class X {
 	static onExtend(targetClass: X) {
 		console.log(\`Class X is extended by \${targetClass.toString()}\`)
 	}
