@@ -2,8 +2,12 @@
 	"name": "babel-plugin-event-on-class-extend",
 	"version": "1.0.0",
 	"description": "Babel Plugin For Event On Class Extend",
-	"main": "src/index.ts",
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
 	"type": "module",
+	"files": [
+		"dist"
+	],
 	"devDependencies": {
 		"@babel/preset-typescript": "^7.22.11",
 		"@types/babel__core": "^7.20.1",
@@ -22,5 +26,6 @@
 	"license": "MIT",
 	"dependencies": {
 		"@babel/core": "^7.22.11"
-	}
+	},
+	"homepage": "https://github.com/kennarddh/babel-plugin-event-on-class-extend#readme"
 }
