@@ -25,7 +25,7 @@
 	],
 	"author": "kennarddh",
 	"license": "MIT",
-	"dependencies": {
+	"peerDependencies": {
 		"@babel/core": "^7.22.11"
 	},
 	"homepage": "https://github.com/kennarddh/babel-plugin-event-on-class-extend#readme"
