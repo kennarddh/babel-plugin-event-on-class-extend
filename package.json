@@ -17,7 +17,8 @@
 	},
 	"scripts": {
 		"start": "ts-node-esm ./example/index.ts",
-		"build": "tsc"
+		"build": "tsc",
+		"prepack": "npm run build"
 	},
 	"keywords": [
 		"typescript"
