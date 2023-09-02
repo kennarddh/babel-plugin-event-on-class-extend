@@ -10,7 +10,7 @@ class X implements IOnExtendEvent {
 
 class Y extends X {
 	toString() {
-		return "Y"
+		return 'Y'
 	}
 }
 `
