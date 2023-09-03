@@ -1,4 +1,4 @@
-# **Experimental** Babel Plugin For Event On Class Extend
+# Babel Plugin For Event On Class Extend
 
 [Demo](https://github.com/kennarddh/test-babel-plugin-event-on-class-extend)
 
