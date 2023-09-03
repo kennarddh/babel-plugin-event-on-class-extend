@@ -2,6 +2,12 @@
 
 [Demo](https://github.com/kennarddh/test-babel-plugin-event-on-class-extend)
 
+## Install
+
+```bash
+npm i -D babel-plugin-event-on-class-extend
+```
+
 ## Usage
 
 ```ts
