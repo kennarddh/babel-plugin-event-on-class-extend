@@ -1,38 +1,44 @@
-import babelCore, { PluginObj } from '@babel/core'
+import { declare } from '@babel/helper-plugin-utils'
 
-type Babel = typeof babelCore
+export interface IOptions {
+	staticCallbackName?: string
+}
 
-const BabelPluginEventOnChassExtend = (babel: Babel): PluginObj => {
-	return {
-		visitor: {
-			ClassDeclaration(path) {
-				if (path.isClassDeclaration()) {
-					if (
-						path.node.superClass !== null &&
-						path.node.superClass.type === 'Identifier'
-					) {
-						const className = path.node.id.name
-						const superClass = path.node.superClass.name
+const BabelPluginEventOnChassExtend = declare<IOptions>(
+	(babel, { staticCallbackName = 'onExtend' }) => {
+		return {
+			visitor: {
+				ClassDeclaration(path) {
+					if (path.isClassDeclaration()) {
+						if (
+							path.node.superClass !== null &&
+							path.node.superClass.type === 'Identifier'
+						) {
+							const className = path.node.id.name
+							const superClass = path.node.superClass.name
 
-						path.insertAfter(
-							babel.types.expressionStatement(
-								babel.types.optionalCallExpression(
-									babel.types.optionalMemberExpression(
-										babel.types.identifier(superClass),
-										babel.types.identifier('onExtend'),
-										false,
-										true
-									),
-									[babel.types.identifier(className)],
-									false
+							path.insertAfter(
+								babel.types.expressionStatement(
+									babel.types.optionalCallExpression(
+										babel.types.optionalMemberExpression(
+											babel.types.identifier(superClass),
+											babel.types.identifier(
+												staticCallbackName
+											),
+											false,
+											true
+										),
+										[babel.types.identifier(className)],
+										false
+									)
 								)
 							)
-						)
+						}
 					}
-				}
+				},
 			},
-		},
+		}
 	}
-}
+)
 
 export default BabelPluginEventOnChassExtend

@@ -1,5 +1,5 @@
 import babel from '@babel/core'
-import babelPluginEventOnClassExtend from '../dist/index.js'
+import BabelPluginEventOnClassExtend from '../dist/index.js'
 
 const code = `
 class X {
@@ -18,7 +18,12 @@ class Y extends X {
 
 const output = babel.transformSync(code, {
 	filename: 'file.ts',
-	plugins: [babelPluginEventOnClassExtend],
+	plugins: [
+		[
+			BabelPluginEventOnClassExtend,
+			{ staticCallbackName: 'staticCallbackName' },
+		],
+	],
 	presets: ['@babel/preset-typescript'],
 })
 
