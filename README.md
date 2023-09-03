@@ -8,6 +8,8 @@
 
 [Changelog](./CHANGELOG.md)
 
+[NPM Package](https://www.npmjs.com/package/babel-plugin-event-on-class-extend)
+
 ## Install
 
 ```bash
