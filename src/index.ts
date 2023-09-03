@@ -7,6 +7,7 @@ export interface IOptions {
 const BabelPluginEventOnChassExtend = declare<IOptions>(
 	(babel, { staticCallbackName = 'onExtend' }) => {
 		return {
+			name: 'babel-plugin-event-on-class-extend',
 			visitor: {
 				ClassDeclaration(path) {
 					if (path.isClassDeclaration()) {
