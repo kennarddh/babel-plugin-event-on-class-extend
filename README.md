@@ -12,7 +12,7 @@
 npm i -D babel-plugin-event-on-class-extend
 ```
 
-Add this plugin to your babel config or add it from the cli
+Add this plugin to your babel config file or add it from the cli
 
 ### Babel Config
 
@@ -50,6 +50,23 @@ class Y extends X {
 This will output `Class X is extended by "I'm Y"` when ran.
 
 ## Options
+
+### How To Use Plugin Options
+
+Change the plugin usage to this in babel config file
+
+```json
+{
+	"plugins": [
+		[
+			"babel-plugin-event-on-class-extend",
+			{ "staticCallbackName": "onExtend" }
+		]
+	]
+}
+```
+
+### List
 
 | Option             | Description                                    | Default  | Required |
 | ------------------ | ---------------------------------------------- | -------- | -------- |
