@@ -28,5 +28,8 @@
 	"peerDependencies": {
 		"@babel/core": "^7.22.11"
 	},
-	"homepage": "https://github.com/kennarddh/babel-plugin-event-on-class-extend#readme"
+	"homepage": "https://github.com/kennarddh/babel-plugin-event-on-class-extend#readme",
+	"dependencies": {
+		"@babel/helper-plugin-utils": "^7.22.5"
+	}
 }
