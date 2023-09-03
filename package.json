@@ -22,7 +22,12 @@
 		"prepack": "npm run build"
 	},
 	"keywords": [
-		"typescript"
+		"typescript",
+		"babel-plugin",
+		"babel",
+		"class",
+		"event",
+		"extends"
 	],
 	"author": "kennarddh",
 	"license": "MIT",
