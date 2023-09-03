@@ -6,6 +6,8 @@
 
 [Stack Overflow Answer](https://stackoverflow.com/a/77031020/14813577)
 
+[Changelog](./CHANGELOG.md)
+
 ## Install
 
 ```bash
