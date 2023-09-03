@@ -30,7 +30,7 @@ const BabelPluginEventOnChassExtend = declare<IOptions>(
 											true
 										),
 										[babel.types.identifier(className)],
-										false
+										true
 									)
 								)
 							)
