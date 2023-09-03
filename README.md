@@ -48,3 +48,9 @@ class Y extends X {
 ```
 
 This will output `Class X is extended by "I'm Y"` when ran.
+
+## Options
+
+| Option             | Description                                    | Default  | Required |
+| ------------------ | ---------------------------------------------- | -------- | -------- |
+| staticCallbackName | Change the default static method callback name | onExtend | false    |
