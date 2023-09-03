@@ -8,6 +8,22 @@
 npm i -D babel-plugin-event-on-class-extend
 ```
 
+Add this plugin to your babel config or add it from the cli
+
+### Babel Config
+
+```json
+{
+	"plugins": ["babel-plugin-event-on-class-extend"]
+}
+```
+
+### CLI
+
+```
+npx babel ... --plugins=babel-plugin-event-on-class-extend
+```
+
 ## Usage
 
 ```ts
