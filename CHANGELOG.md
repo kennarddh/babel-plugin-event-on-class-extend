@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.1.1] - 03-09-2023
+
+### Fixed
+
+-   Error thrown if the callback function is not defined. Now it will ignore if the class doesn't have the method
+
 ## [1.1.0] - 03-09-2023
 
 ### Added
