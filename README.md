@@ -2,6 +2,8 @@
 
 [Demo](https://github.com/kennarddh/test-babel-plugin-event-on-class-extend)
 
+[Run Example To See Compiled Output](./example/index.ts)
+
 ## Install
 
 ```bash
