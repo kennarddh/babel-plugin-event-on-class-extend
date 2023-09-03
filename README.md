@@ -4,6 +4,8 @@
 
 [Run Example To See Compiled Output](./example/index.ts)
 
+[Stack Overflow Answer](https://stackoverflow.com/a/77031020/14813577)
+
 ## Install
 
 ```bash
