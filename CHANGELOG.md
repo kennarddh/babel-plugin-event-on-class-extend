@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 -   CommonJS and ES Modules build
+-   Use terser to minify bundle. From 1kb to 550 bytes for CommonJS build
 
 ## [1.1.2] - 03-09-2023
 
