@@ -23,6 +23,7 @@ const RollupConfig: RollupOptions = {
 			exclude: ['rollup.config.ts'],
 		}),
 	],
+	external: ['@babel/helper-plugin-utils'],
 }
 
 export default RollupConfig
