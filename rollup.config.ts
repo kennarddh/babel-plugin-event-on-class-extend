@@ -1,6 +1,5 @@
 import { RollupOptions } from 'rollup'
 import typescript from '@rollup/plugin-typescript'
-import typescriptModule from 'typescript'
 import del from 'rollup-plugin-delete'
 import packageJSON from './package.json' assert { type: 'json' }
 
@@ -19,11 +18,6 @@ const RollupConfig: RollupOptions = {
 	plugins: [
 		del({ targets: 'dist/*' }),
 		typescript({
-			typescript: typescriptModule,
-			outDir: 'dist',
-			declarationDir: 'dist',
-			declaration: true,
-			sourceMap: true,
 			exclude: ['rollup.config.ts'],
 		}),
 	],
