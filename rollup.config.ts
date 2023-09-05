@@ -9,10 +9,12 @@ const RollupConfig: RollupOptions = {
 		{
 			file: packageJSON.exports['.'].import,
 			format: 'esm',
+			sourcemap: true,
 		},
 		{
 			file: packageJSON.exports['.'].require,
 			format: 'cjs',
+			sourcemap: true,
 		},
 	],
 	plugins: [
