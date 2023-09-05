@@ -7,11 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.1.2] - 03-09-2023
+
 ### Added
 
 -   Add npm package link in `README.md`
-
-## [1.1.2] - 03-09-2023
 
 ## [1.1.1] - 03-09-2023
 
