@@ -1,6 +1,9 @@
 import { RollupOptions } from 'rollup'
+
 import typescript from '@rollup/plugin-typescript'
 import del from 'rollup-plugin-delete'
+import terser from '@rollup/plugin-terser'
+
 import packageJSON from './package.json' assert { type: 'json' }
 
 const RollupConfig: RollupOptions = {
@@ -22,6 +25,7 @@ const RollupConfig: RollupOptions = {
 		typescript({
 			exclude: ['rollup.config.ts'],
 		}),
+		terser(),
 	],
 	external: ['@babel/helper-plugin-utils'],
 }
