@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 -   `classOptionalChain` Option to enable the class optional chain
+-   `passDerivedClassAsParameter` Option to disable passing derived class as parameter to `onExtend`
 
 ## [1.1.5]
 
