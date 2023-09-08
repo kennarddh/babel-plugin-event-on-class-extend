@@ -27,6 +27,7 @@ const output = babel.transformSync(code, {
 			{
 				staticCallbackName: 'staticCallbackName',
 				classOptionalChain: false,
+				passDerivedClassAsParameter: true,
 			},
 		],
 	],

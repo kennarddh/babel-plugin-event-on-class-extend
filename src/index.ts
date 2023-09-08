@@ -3,12 +3,17 @@ import { declare } from '@babel/helper-plugin-utils'
 export interface IOptions {
 	staticCallbackName?: string
 	classOptionalChain?: boolean
+	passDerivedClassAsParameter?: boolean
 }
 
 const BabelPluginEventOnChassExtend = declare<IOptions>(
 	(
 		babel,
-		{ staticCallbackName = 'onExtend', classOptionalChain = false }
+		{
+			staticCallbackName = 'onExtend',
+			classOptionalChain = false,
+			passDerivedClassAsParameter = true,
+		}
 	) => {
 		return {
 			name: 'babel-plugin-event-on-class-extend',
@@ -33,7 +38,13 @@ const BabelPluginEventOnChassExtend = declare<IOptions>(
 											false,
 											classOptionalChain
 										),
-										[babel.types.identifier(className)],
+										passDerivedClassAsParameter
+											? [
+													babel.types.identifier(
+														className
+													),
+											  ]
+											: [],
 										true
 									)
 								)
