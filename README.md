@@ -78,3 +78,4 @@ Change the plugin usage to this in babel config file
 | Option             | Description                                    | Default  | Required |
 | ------------------ | ---------------------------------------------- | -------- | -------- |
 | staticCallbackName | Change the default static method callback name | onExtend | false    |
+| classOptionalChain | Enable class optional operator. `X?.` operator | false    | false    |
