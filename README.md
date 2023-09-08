@@ -75,7 +75,7 @@ Change the plugin usage to this in babel config file
 
 ### List
 
-| Option             | Description                                    | Default  | Required |
-| ------------------ | ---------------------------------------------- | -------- | -------- |
-| staticCallbackName | Change the default static method callback name | onExtend | false    |
-| classOptionalChain | Enable class optional operator. `X?.` operator | false    | false    |
+| Option             | Description                                          | Default  | Required |
+| ------------------ | ---------------------------------------------------- | -------- | -------- |
+| staticCallbackName | Change the default static method callback name       | onExtend | false    |
+| classOptionalChain | Enable class optional operator. `X?.` optional chain | false    | false    |
