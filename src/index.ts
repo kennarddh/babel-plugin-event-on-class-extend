@@ -2,10 +2,14 @@ import { declare } from '@babel/helper-plugin-utils'
 
 export interface IOptions {
 	staticCallbackName?: string
+	classOptionalChain?: boolean
 }
 
 const BabelPluginEventOnChassExtend = declare<IOptions>(
-	(babel, { staticCallbackName = 'onExtend' }) => {
+	(
+		babel,
+		{ staticCallbackName = 'onExtend', classOptionalChain = false }
+	) => {
 		return {
 			name: 'babel-plugin-event-on-class-extend',
 			visitor: {
@@ -27,7 +31,7 @@ const BabelPluginEventOnChassExtend = declare<IOptions>(
 												staticCallbackName
 											),
 											false,
-											false
+											classOptionalChain
 										),
 										[babel.types.identifier(className)],
 										true

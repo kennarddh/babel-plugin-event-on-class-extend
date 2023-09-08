@@ -24,7 +24,10 @@ const output = babel.transformSync(code, {
 	plugins: [
 		[
 			BabelPluginEventOnClassExtend,
-			{ staticCallbackName: 'staticCallbackName' },
+			{
+				staticCallbackName: 'staticCallbackName',
+				classOptionalChain: false,
+			},
 		],
 	],
 	presets: ['@babel/preset-typescript'],
