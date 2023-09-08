@@ -1,6 +1,6 @@
 {
 	"name": "babel-plugin-event-on-class-extend",
-	"version": "1.1.4",
+	"version": "1.1.5",
 	"description": "Babel Plugin For Event On Class Extend",
 	"main": "dist/index.cjs",
 	"module": "dist/index.mjs",
