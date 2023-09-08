@@ -7,32 +7,36 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [1.2.1]
+### Changed
+
+-   [`Changelog`](./CHANGELOG.md) Add release date
+
+## [1.2.1] - 08-09-2023
 
 ### Changed
 
 -   [`Readme`](./README.md) Replace `"` with `
 
-## [1.2.0]
+## [1.2.0] - 08-09-2023
 
 ### Added
 
 -   `classOptionalChain` Option to enable the class optional chain
 -   `passDerivedClassAsParameter` Option to disable passing derived class as parameter to `onExtend`
 
-## [1.1.5]
+## [1.1.5] - 08-09-2023
 
 ### Changed
 
 -   Removed unused optional parameter **Option to enable will be added in future version**
 
-## [1.1.4]
+## [1.1.4] - 05-09-2023
 
 ### Changed
 
 -   Change example parameter type
 
-## [1.1.3]
+## [1.1.3] - 05-09-2023
 
 ### Added
 
