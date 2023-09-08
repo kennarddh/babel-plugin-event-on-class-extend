@@ -79,4 +79,4 @@ Change the plugin usage to this in babel config file
 | --------------------------- | ---------------------------------------------------------------------------- | -------- | -------- |
 | staticCallbackName          | Change the default static method callback name                               | onExtend | false    |
 | classOptionalChain          | Enable class optional operator. `X?.` optional chain                         | false    | false    |
-| passDerivedClassAsParameter | If disable derived class will not be passed to "onExtend" as parameter false | true     | false    |
+| passDerivedClassAsParameter | If disable derived class will not be passed to `onExtend` as parameter false | true     | false    |
