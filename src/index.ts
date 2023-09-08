@@ -27,7 +27,7 @@ const BabelPluginEventOnChassExtend = declare<IOptions>(
 												staticCallbackName
 											),
 											false,
-											true
+											false
 										),
 										[babel.types.identifier(className)],
 										true
